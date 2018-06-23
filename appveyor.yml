@@ -1,10 +1,11 @@
 build: false  # Not a C# project
 environment:
   matrix:
-    - TOXENV: py27
-    - TOXENV: py34
-    - TOXENV: py35
-    - TOXENV: py36
+    - TOXENV: 'py27'
+      TOXPYTHON: C:\Python27\python.exe
+      PYTHON_HOME: C:\Python27
+      PYTHON_VERSION: '2.7'
+PYTHON_ARCH: '32'
 
 matrix:
   fast_finish: true
