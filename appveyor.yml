@@ -5,7 +5,6 @@ environment:
       TOXPYTHON: C:\Python27\python.exe
       PYTHON_HOME: C:\Python27
       PYTHON_VERSION: '2.7'
-PYTHON_ARCH: '32'
 
 matrix:
   fast_finish: true
