@@ -11,8 +11,14 @@ matrix:
 
 install:
   - "SET PATH=%PYTHON_HOME%;%PYTHON_HOME%\\Scripts;%PATH%"
-  - "python --version"
   - "pip install --pre -U tox"
 
 test_script:
-  - tox
+  - "tox"
+
+after_test:
+  - "tox -e coverage,codecov"
+
+cache:
+  - '%LOCALAPPDATA%\pip\cache'
+  - '%USERPROFILE%\.cache\pre-commit'
