@@ -13,3 +13,6 @@ install:
   - "SET PATH=%PYTHON_HOME%;%PYTHON_HOME%\\Scripts;%PATH%"
   - "python --version"
   - "pip install --pre -U tox"
+
+test_script:
+  - C:\Python36\scripts\tox
