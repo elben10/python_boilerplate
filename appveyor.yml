@@ -15,4 +15,4 @@ install:
   - "pip install --pre -U tox"
 
 test_script:
-  - C:\Python36\scripts\tox
+  - tox
